@@ -38,13 +38,15 @@ button {
 
 #indicator-container {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     width: 10%;
 }
 
 #indicator {
     margin: 0;
     visibility: hidden;
+    font-size: 1.6rem;
+    padding: 1rem;
 }
 
 #stop-btn {
@@ -55,3 +57,13 @@ button {
     display: none;
 }
 
+@media screen and (max-width: 500px) {
+    #indicator-container {
+        display: flex;
+        width: auto;
+    }
+
+    #indicator {
+        font-size: 1.4rem;
+    }
+}
