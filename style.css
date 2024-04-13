@@ -21,7 +21,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 button {
@@ -56,6 +56,23 @@ button {
 #reset-btn {
     display: none;
 }
+
+.light-mode-container {
+    margin: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+#dark-mode-btn {
+    display: none;
+}
+
+.light-mode, .light-mode h1, .light-mode h2 {
+    background-color: rgb(221, 248, 254);
+    color: rgb(5, 5, 39);
+}
+
+
+
 
 @media screen and (max-width: 500px) {
     #indicator-container {

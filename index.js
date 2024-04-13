@@ -57,3 +57,22 @@ function resetClock() {
     document.getElementById("stop-btn").style.display = "none";
     document.getElementById("reset-btn").style.display = "none";
 };
+
+
+
+
+function lightMode() {
+
+    const lightMode = document.body;
+    lightMode.classList.toggle("light-mode");
+    document.getElementById("dark-mode-btn").style.display = "block";
+    document.getElementById("light-mode-btn").style.display = "none";
+};
+
+function darkMode() {
+    const darkMode = document.body;
+    darkMode.classList.toggle("light-mode").disabled;
+    document.getElementById("light-mode-btn").innerHTML = "Light mode";
+    document.getElementById("dark-mode-btn").style.display = "none";
+    document.getElementById("light-mode-btn").style.display = "block";
+};
